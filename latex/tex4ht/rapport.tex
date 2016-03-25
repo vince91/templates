@@ -1,0 +1,54 @@
+\documentclass[12pt]{article}
+\usepackage[french]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern} 
+\usepackage{listings}
+\usepackage{xcolor}
+
+\begin{document}
+
+\lstset{
+  language=C
+}
+
+\title{SE205 - TP Posix}
+\author{Vincent Timofti}
+\date{\today}
+\maketitle
+
+\tableofcontents
+
+\section{Création de processus et terminaison par ordre de création}
+
+\begin{lstlisting}
+#include <stdio.h>
+#define N 10
+/* Block
+ * comment */
+
+int main()
+{
+    int i;
+
+    // Line comment.
+    puts("Hello world!");
+    
+    for (i = 0; i < N; i++)
+    {
+        puts("LaTeX is also great for programmers!");
+    }
+
+    return 0;
+}
+\end{lstlisting}
+
+\section{Tampon circulaire protégé contre les accès concurrents}
+
+\section{Création de processus et terminaison par ordre d’arrivée}
+
+\section{Exclusion mutuelle entre lecteurs et rédacteurs (3 mutexes)}
+
+\section{Exclusion mutuelle entre lecteurs et rédacteurs (1 mutex et 1 cond)}
+
+\end{document}
